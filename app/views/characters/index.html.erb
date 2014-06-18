@@ -1,0 +1,9 @@
+<h3>All Characters</h3>
+
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <%= character.name %> <%= character.actor %> <%= character.description %> - <%= link_to 'delete', character, method: :delete %>
+    </li>
+  <% end %>
+</ul>
